@@ -1,0 +1,39 @@
+function CalcularImpostoDeRenda(salario : number) : number
+{
+    //Início do trecho para alteração   
+
+    if (salario > 5000){
+
+        salario =  37% salario 
+    }
+    else if (salario > 2500 && salario < 5000)
+    {
+
+        salario = 25% salario
+    }
+    else if (salario > 1000 && salario < 2500){
+
+
+        salario = 15% salario
+    }
+    else {
+
+        salario = 0
+    }
+
+    return salario;
+    //Fim do trecho para alteração
+}
+
+function CalcularEImprimirImpostoDeRenda(salario : number)
+{      
+    var ir = CalcularImpostoDeRenda(salario);
+      
+    console.log(`Salário: ${salario} Alíquota IR: ${ir}`); 
+}
+
+
+CalcularEImprimirImpostoDeRenda(800);
+CalcularEImprimirImpostoDeRenda(1200);
+CalcularEImprimirImpostoDeRenda(3000);
+CalcularEImprimirImpostoDeRenda(6000);

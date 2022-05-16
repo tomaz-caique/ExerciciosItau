@@ -1,0 +1,40 @@
+const diasDaSemana : number[] = [1, 2, 3, 4, 5, 6, 7, 8];
+
+//Início do trecho para alteração
+let texto = "Dia "
+
+
+
+diasDaSemana.forEach((diasDaSemana) => {
+let dia 
+    switch(diasDaSemana){
+        case 1:
+        dia = " é Domingo";
+        break;
+        case 2:
+        dia = " é Segunda-Feira"
+        break;
+        case 3: 
+        dia = " é Terça-Feira"
+        break;
+        case 4:
+        dia = " é Quarta-Feira"
+        break;
+        case 5:
+        dia = " é Quinta-Feira"
+        break
+        case 6:
+        dia = " é Sexta-feira"
+        break;
+        case 7:
+        dia = " é Sabado"
+        break;
+        default:
+        dia = " é Invalido"
+        break
+
+    }
+
+    console.log(texto + diasDaSemana + dia);
+
+})
